@@ -10,7 +10,7 @@ public class CommonElements {
 		List<Integer> b = Arrays.asList(2,4,6);
 		List<Integer>common=a.stream().filter(b::contains).collect(Collectors.toList());
 		System.out.println(common);
-		System.out.println("Testing with git commit");
+		System.out.println("Testing with git commit changes only");
 		System.out.println("Test"); 
 		
 		
