@@ -11,12 +11,12 @@ public class Findsecondlargest {
         System.out.println(secondHighest);
         
         // second smallest number
-        int secondLowest=list.stream().distinct().sorted().skip(1).findFirst().orElseThrow();
+        int secondLowest=list.stream().distinct().sorted().skip(1).findFirst().orElseThrow(null);
         System.out.println(secondLowest);
         
         //retrieve the 5th element from list
         List<String>lista=Arrays.asList("a","b","c","d","e");
-        String res=lista.stream().skip(4).findFirst().orElseThrow();
+        String res=lista.stream().skip(4).findFirst().orElseThrow(null);
         System.out.println(res);
 	}
 
