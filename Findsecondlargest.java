@@ -1,4 +1,3 @@
-package com.example.Stream;
 
 import java.util.Arrays;
 import java.util.Comparator;
@@ -8,7 +7,7 @@ public class Findsecondlargest {
 
 	public static void main(String[] args) {
         List<Integer> list = Arrays.asList(10, 20, 4, 45, 99, 99);
-        int secondHighest=list.stream().distinct().sorted(Comparator.reverseOrder()).skip(1).findFirst().orElseThrow();
+        int secondHighest=list.stream().distinct().sorted(Comparator.reverseOrder()).skip(1).findFirst().orElseThrow(null);
         System.out.println(secondHighest);
         
         // second smallest number
